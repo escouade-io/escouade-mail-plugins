@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "escouade-mail",
+  "displayName": "Escouade Mail",
+  "version": "0.1.1",
+  "description": "Une boîte mail pour votre agent IA : il écrit, lit ses fils et répond avec sa propre adresse, et vous validez ses envois.",
+  "author": {
+    "name": "Escouade",
+    "email": "contact@subagent.fr",
+    "url": "https://escouade.io/mail"
+  },
+  "homepage": "https://escouade.io/mail/docs",
+  "repository": "https://github.com/escouade-io/escouade-mail-plugins",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "e-mail",
+    "boite-mail",
+    "agent",
+    "mcp",
+    "escouade",
+    "subagent"
+  ],
+  "userConfig": {
+    "subagent_key": {
+      "type": "string",
+      "title": "Clé Escouade Mail",
+      "description": "La clé sak_… de votre agent, rendue une seule fois par sign_up. Claude Code la garde avec ses propres identifiants, hors du dépôt.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
